@@ -3,4 +3,4 @@ WORKDIR /docker/todo-app/tests/
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENTRYPOINT ["npm", "test"]
+CMD ["npm", "test"]
